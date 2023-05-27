@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    cursor:default;
+    user-select: none;
+    font-family:Alkatra;
+
+}
+body{
+    background-color: rgb(98, 217, 249);
+    width: 100vw;
+    height: 100vh;
+
+    
+}
+.top{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.top h1{
+    font-size: 2.4vw;
+    color: rgb(27, 52, 56);
+    
+}
+.score{
+    position: fixed;
+    right: 2vw;
+    font-size: 1.4vw;
+    background-color: rgb(23, 152, 173);
+    width: 6vw;
+    height: 3vw;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 800;
+}
+
+.question{
+    width: 100vw;
+    height: 40vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+    position: relative;
+
+}
+
+.options{
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(23, 152, 173);
+    margin: 10px;
+    width: 24vw;
+    height: 16vw;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: 0px 6px 0px rgb(18, 86, 97);
+    transform:translateY(0) ;
+    transition: all 0.2s ease-out;
+    position: relative;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: rgb(80, 199, 218);
+}
+.button:active{
+    box-shadow: none;
+    transform:translateY(6px);
+}
+
+.nextbutton{
+    width: 8vw;
+    height: 3vw;
+    background-color: rgb(23, 152, 173);
+    position: fixed;
+    right: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 1.4vw;
+    color: white;
+    transition: 0.3s;
+}
+
+.nextbutton:hover{
+    cursor: pointer;
+    background-color: white;
+    color: rgb(23, 152, 173);
+}
+
+.correctAnswer{
+    background-color: rgb(93, 223, 54) !important; 
+}
+.wrongAnswer{
+    background-color: rgb(224, 50, 50) !important;
+}
